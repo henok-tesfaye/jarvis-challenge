@@ -56,7 +56,7 @@ const SortableItem = SortableElement(({ item }) => <Image width={200} height={20
 
 const SortableList = SortableContainer(({ items }) => {
   return (
-    <GridWrapper gridGap={25} width={200}>
+    <GridWrapper numberOfColumns={3} gridGap={25} width={200}>
       {items.map((item, index) => (
         <SortableItem key={`${item.id}`} index={index} item={item} />
       ))}
